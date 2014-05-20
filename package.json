@@ -1,0 +1,16 @@
+{
+  "name": "mixdown-object",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec -u tdd test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.19.0",
+    "tape": "~1.1.0",
+    "tap": "~0.4.4",
+    "broadway": "~0.2.9"
+  },
+  "description": "Attaches an object as a plugin. Great for DI config sections (like tracking codes, api keys, etc) "
+}
