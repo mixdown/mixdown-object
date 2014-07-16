@@ -1,6 +1,6 @@
 {
   "name": "mixdown-object",
-  "version": "0.0.1",
+  "version": "3.0.0",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec -u tdd test/*.js"
