@@ -1,4 +1,4 @@
-var BasePlugin = require('../../index.js').Plugin;
+var BasePlugin = require('mixdown-app').Plugin;
 
 module.exports = BasePlugin.extend({
   get: function(namespace) {
@@ -8,5 +8,5 @@ module.exports = BasePlugin.extend({
       this[namespace] = options;
     };
 
-  };
+  }
 });
