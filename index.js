@@ -1,8 +1,12 @@
-module.exports = function(namespace) {
-  namespace = namespace || 'undefined';
+var BasePlugin = require('../../index.js').Plugin;
 
-  this.attach = function(options) {
-    this[namespace] = options;
+module.exports = BasePlugin.extend({
+  get: function(namespace) {
+    namespace = namespace || 'undefined';
+
+    this.attach = function(options) {
+      this[namespace] = options;
+    };
+
   };
-
-};
+});
