@@ -1,8 +1,12 @@
-module.exports = function(namespace) {
-  namespace = namespace || 'undefined';
+var BasePlugin = require('mixdown-app').Plugin;
 
-  this.attach = function(options) {
-    this[namespace] = options;
-  };
+module.exports = BasePlugin.extend({
+  get: function(namespace) {
+    namespace = namespace || 'undefined';
 
-};
+    this.attach = function(options) {
+      this[namespace] = options;
+    };
+
+  }
+});
